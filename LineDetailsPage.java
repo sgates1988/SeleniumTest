@@ -12,12 +12,12 @@ public Class LineDetailsPage {
         static String deviceHeader = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-device/section/div/div/div[1]"));
         static String crktRwdsHeader = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-rewards/section/div/div/div[1]/div[1]/h2"));
        
-       //Element locators for the expand/collaspe buttons for each section
-        static String lnExClpsBtn = driver.findElement(By.xpath("//*[@id="myAccountMenuSub"]/li[5]/a"));
-        static String lnUsageExClpsBtn = driver.findElement(By.CssSelector("panel-body-wrapper in collapse")).GetAttribute("aria-expanded");
-        static String planExClpsBtn = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-plan/section/div/div[1]/div/div[1]/h2"));
-        static String featureExClpsBtn = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-features/section/div/div/div[1]/div[1]/h2"));
-        static String deviceExClpsBtn = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-device/section/div/div/div[1]"));
-        static String crktRwdsExClpsBtn = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-rewards/section/div/div/div[1]/div[1]/h2"));
+       //Element locators for the expanded sections
+        static String lnExpdSectn = driver.findElement(By.xpath("//*[@id="myAccountMenuSub"]/li[5]/a"));
+        static String lnUsageExpdSectn = driver.findElement(By.xpath("//*[@id="usage-region"].getAttribute("aria-expanded")"));
+        static String planExpdSectn = driver.findElement(By.xpath("//*[@id="plan-region"].getAttribute("aria-expanded")));
+        static String featureExpdSectn = driver.findElement(By.xpath("//*[@id="features-region"].getAttribute("aria-expanded")"));
+        static String deviceExpdSectn = driver.findElement(By.xpath("//*[@id="device-region"].getAttribute("aria-expanded")"));
+        static String crktRwdsExpdSectn = driver.findElement(By.xpath("//*[@id="rewards-region"].getAttribute("aria-expanded")"));
         
     }
