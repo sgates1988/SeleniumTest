@@ -32,10 +32,6 @@ public Class tc_0827_myaccount_singleline_line_details_view() {
 //And:the "your lines" heading is not present in the view
 
 //And: the usage, plan, features, device and cricket rewards headings are available and all expanded 
-}	public void getMyAcctSummaryTab() {
-
-		page.acctSummTab(driver).verifyElementIsPresent();
-		page.acctSummTab(driver).click();
-	} 
+	}	 
 	
 }
