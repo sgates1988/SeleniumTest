@@ -93,4 +93,9 @@ public static  void verifySingleLineUserPresent() {
         driver.wait.until(ExpectedConditions.elementToBeClickable(crktRwdsExpdSectn));
         assertTrue("Verification Passed: Rewards section is NOT expanded.",(lnUsageExpdSectn).equalsIgnoreCase(outcome)));
     }
+//Verify line header displays users phone number
+public void verifyPhoneNumberHeader(String lineNum) {
+		lineNum = phnLineHeader; 
+		if(lineNum.matches("\\(\\d{3}\\)-\\d{3}-\\d{4}")) 
+			return true;
 }
