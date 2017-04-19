@@ -7,7 +7,8 @@ public Class LineDetailsPage {
         
         //Element locators for the Your Lines Section 
         static String lnExpdSectn = driver.findElement(By.xpath("//*[@id="myAccountMenuSub"]/li[5]/a"));
-        
+        static String phnLineHeader = driver.findElement(By.xpath("*[@id="container"]/section/div/line-details/div/page-banner/div/div/div/div/div[1]/h1")).getText();
+
         
         //Element locators for the Usage Section
         static String lineUsageHeader = driver.findElement(By.xpath("//*[@id="container"]/section/div/line-details/section/div/div/div/line-details-usage/section/div/div/div[1]/div[1]/h2"));
